@@ -1,0 +1,11 @@
+Group Name : The Allies
+
+Group Members:
+
+1. Suriya Akther Mouli  -  21225103080
+2. Rahimur Rahman Showrav  -  21225103062
+3. Ashraful Alam  -  21225103080
+4. Afiya Amdad Rami  -  21225103072
+5. Tasmia Nur Tepanto  -  20215103019
+
+Project Title : Movers & Packers Management System
