@@ -3,6 +3,7 @@ from django.contrib.auth import login, authenticate, logout
 # Create your views here.
 from .models import *
 from datetime import date
+from django.db.models import Q
 def index(request):
     return render(request, 'index.html')
 def admin_login(request):
@@ -24,7 +25,12 @@ def admin_login(request):
 def admin_home(request):
     if not request.user.is_authenticated:
         return redirect('admin_login')
-    return render(request, 'admin_home.html')
+    totalservices = Services.objects.all().count()
+    totalunread = Contact.objects.filter(isread="no").count()
+    totalread = Contact.objects.filter(isread="yes").count()
+    totalnewbooking = SiteUser.objects.filter(status=None).count()
+    totaloldbooking = SiteUser.objects.filter(status="1").count()
+    return render(request, 'admin_home.html',locals())
 
 def Logout(request):
     logout(request)
@@ -175,3 +181,62 @@ def view_queries(request,pid):
     contact.isread = "yes"
     contact.save()
     return render(request, 'view_queries.html',locals())
+
+def delete_query(request,pid):
+    contact = Contact.objects.get(id=pid)
+    contact.delete()
+    return redirect('read_queries')
+
+def search(request):
+    sd = None
+    if request.method== 'POST':
+        sd = request.POST['searchdata']
+    try:
+        booking = SiteUser.objects.filter(Q(name=sd)|Q(mobile=sd))
+    except:
+        booking = ""
+        print(booking)
+    return render(request, 'search.html',locals())
+
+def betweendate_bookingreport(request):
+    if not request.user.is_authenticated:
+        return redirect('admin_login')
+
+    if request.method== 'POST':
+        fd = request.POST['fromdate']
+        td = request.POST['todate']
+        booking = SiteUser.objects.filter(Q(requestdate__gte=fd) & Q(requestdate__lte=td))
+        return render(request, 'bookingbtwdates.html',locals())
+    return render(request, 'betweendate_bookingreport.html',locals())
+
+def betweendate_contactreport(request):
+    if not request.user.is_authenticated:
+        return redirect('admin_login')
+
+    if request.method== 'POST':
+        fd = request.POST['fromdate']
+        td = request.POST['todate']
+        contact = Contact.objects.filter(Q(mdate__gte=fd) & Q(mdate__lte=td))
+        return render(request, 'contactbtwdates.html',locals())
+    return render(request, 'betweendate_contactreport.html',locals())
+
+def change_password(request):
+    if not request.user.is_authenticated:
+        return redirect('admin_login')
+    error=""
+    if request.method == 'POST':
+        o = request.POST['currentpassword']
+        n = request.POST['newpassword']
+        try:
+            u = User.objects.get(id=request.user.id)
+            if u.check_password(o):
+                u.set_password(n)
+                u.save()
+                error = "no"
+            else:
+                error = "not"
+        except:
+            error = "yes"
+
+    return render(request,'change_password.html',locals())
+
