@@ -92,13 +92,13 @@ This is a web-based application designed to streamline the management of moving 
 ![Home Page Screenshot](C:\Users\MOULI\OneDrive\Pictures\Screenshots-Homepage.pmg)
 
 ### Request Service Page
-![Home Page Screenshot](C:\Users\MOULI\OneDrive\Pictures\Screenshots-Homepage.pmg)
+![Request Service Page Screenshot](C:\Users\MOULI\OneDrive\Pictures\Screenshots-Homepage.pmg)
 
 ### Contact Us Page
-![Home Page Screenshot](C:\Users\MOULI\OneDrive\Pictures\Screenshots-Homepage.pmg)
+![Contact Us Page Screenshot](C:\Users\MOULI\OneDrive\Pictures\Screenshots-Homepage.pmg)
 
 ### Admin Login Page
-![Home Page Screenshot](C:\Users\MOULI\OneDrive\Pictures\Screenshots-Homepage.pmg)
+![Admin Login Page Screenshot](C:\Users\MOULI\OneDrive\Pictures\Screenshots-Homepage.pmg)
 
 ### Admin Dashboard
 ![Admin Dashboard Screenshot](path/to/dashboard-screenshot.png)
