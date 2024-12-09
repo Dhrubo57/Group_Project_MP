@@ -72,7 +72,7 @@ This is a web-based application designed to streamline the management of moving 
    python manage.py makemigrations
    python manage.py migrate
    ```
-6.Start the development server:
+6. Start the development server:
    ```bash
    python manage.py runserver
    ```   
