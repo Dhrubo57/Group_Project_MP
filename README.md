@@ -28,7 +28,7 @@ This is a web-based application designed to streamline the management of moving 
 
 3. **Bookings Management**:  
    - **New Bookings**: View and accept/reject new service requests.  
-   - **Old Bookings**: Manage previously accepted bookings.  
+   - **Accepted Bookings**: Manage previously accepted bookings.  
 
 4. **Queries Management**:  
    - **Unread Queries**: View new customer questions.  
@@ -61,5 +61,13 @@ python manage.py runserver
 ## Built With  
 - **Front-End**: HTML, CSS, JavaScript  
 - **Framework**: Python Django 
-- **Database**: SQLite3 (default with Django)  
+- **Database**: SQLite3 (default with Django)
+
+## Screenshots
+### Home Page
+![Home Page Screenshot](C:\Users\MOULI\OneDrive\Pictures\Screenshots-Homepage.pmg)
+
+### Admin Dashboard
+![Admin Dashboard Screenshot](path/to/dashboard-screenshot.png)
+
  
