@@ -60,8 +60,8 @@ This is a web-based application designed to streamline the management of moving 
    ```
 3. Create a virtual environment:
    ```bash
-  python -m venv venv
-  venv\Scripts\activate
+   python -m venv venv
+   venv\Scripts\activate
    ```
 4. Install project dependencies:
    ```bash
@@ -78,8 +78,8 @@ This is a web-based application designed to streamline the management of moving 
    ```   
 7. Run the application:
    ```bash
-  Home Page: http://127.0.0.1:8000/
-  Admin Panel: http://127.0.0.1:8000/admin/
+   Home Page: http://127.0.0.1:8000/
+   Admin Panel: http://127.0.0.1:8000/admin/
    ```
 
 ## Built With  
