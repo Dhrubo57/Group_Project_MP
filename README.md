@@ -58,21 +58,29 @@ This is a web-based application designed to streamline the management of moving 
    ```bash
    cd movers-packers-management-system
    ```
-3. Set up the database and configure database connection in the project files.
-4. Run the application:
+3. Create a virtual environment:
    ```bash
-   [Specify the command to start your server, e.g., php -S localhost:8000]
+  python -m venv venv
+  venv\Scripts\activate
    ```
-
-### Installation Steps  
-1. Clone the repository:  
+4. Install project dependencies:
    ```bash
-   git clone https://github.com/yourusername/movers-packers-management.git
-   cd movers-packers-management
    pip install -r requirements.txt
-python manage.py makemigrations
-python manage.py migrate
-python manage.py runserver
+   ```
+5. Set up the database:
+   ```bash
+   python manage.py makemigrations
+   python manage.py migrate
+   ```
+6.Start the development server:
+   ```bash
+   python manage.py runserver
+   ```   
+7. Run the application:
+   ```bash
+  Home Page: http://127.0.0.1:8000/
+  Admin Panel: http://127.0.0.1:8000/admin/
+   ```
 
 ## Built With  
 - **Front-End**: HTML, CSS, JavaScript  
