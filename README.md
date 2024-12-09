@@ -49,6 +49,21 @@ This is a web-based application designed to streamline the management of moving 
 - Django 3.2 or higher  
 - SQLite3 (default with Django)
 
+## Setup Instructions
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/movers-packers-management-system.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd movers-packers-management-system
+   ```
+3. Set up the database and configure database connection in the project files.
+4. Run the application:
+   ```bash
+   [Specify the command to start your server, e.g., php -S localhost:8000]
+   ```
+
 ### Installation Steps  
 1. Clone the repository:  
    ```bash
@@ -58,6 +73,7 @@ This is a web-based application designed to streamline the management of moving 
 python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
+
 ## Built With  
 - **Front-End**: HTML, CSS, JavaScript  
 - **Framework**: Python Django 
@@ -67,7 +83,23 @@ python manage.py runserver
 ### Home Page
 ![Home Page Screenshot](C:\Users\MOULI\OneDrive\Pictures\Screenshots-Homepage.pmg)
 
+### Request Service Page
+![Home Page Screenshot](C:\Users\MOULI\OneDrive\Pictures\Screenshots-Homepage.pmg)
+
+### Contact Us Page
+![Home Page Screenshot](C:\Users\MOULI\OneDrive\Pictures\Screenshots-Homepage.pmg)
+
+### Admin Login Page
+![Home Page Screenshot](C:\Users\MOULI\OneDrive\Pictures\Screenshots-Homepage.pmg)
+
 ### Admin Dashboard
 ![Admin Dashboard Screenshot](path/to/dashboard-screenshot.png)
 
- 
+
+ ## Future Enhancements
+ -Add review option for customers.
+- Add user authentication for customers.
+- Integrate payment gateway for online payments.
+- Add support for multi-language interfaces.
+- Aplication system
+
