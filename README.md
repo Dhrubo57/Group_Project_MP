@@ -87,22 +87,6 @@ This is a web-based application designed to streamline the management of moving 
 - **Framework**: Python Django 
 - **Database**: SQLite3 (default with Django)
 
-## Screenshots
-### Home Page
-![Home Page Screenshot](C:\Users\MOULI\OneDrive\Pictures\Screenshots-Homepage.pmg)
-
-### Request Service Page
-![Request Service Page Screenshot](C:\Users\MOULI\OneDrive\Pictures\Screenshots-Homepage.pmg)
-
-### Contact Us Page
-![Contact Us Page Screenshot](C:\Users\MOULI\OneDrive\Pictures\Screenshots-Homepage.pmg)
-
-### Admin Login Page
-![Admin Login Page Screenshot](C:\Users\MOULI\OneDrive\Pictures\Screenshots-Homepage.pmg)
-
-### Admin Dashboard
-![Admin Dashboard Screenshot](path/to/dashboard-screenshot.png)
-
 
  ## Future Enhancements
  -Add review option for customers.
